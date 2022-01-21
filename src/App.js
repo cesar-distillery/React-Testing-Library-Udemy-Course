@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Cards from './components/Cards/Cards';
+import Filter from './components/Filter/Filter';
+import Pets from './components/Pets/Pets';
+import cats from './mocks/cats.json';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Pets />
+  )
+};
+
+// function App() {
+//   return (
+//     <div className="App p-5 flex">
+//       <div className='p-10 -bg-green-600'>
+//         <Filter />
+//       </div>
+//       <div className="py-8 px-8 -bg-slate-600">
+//         <Cards cats={cats} />
+//       </div>
+//     </div>
+//   );
+// }
 
 export default App;
